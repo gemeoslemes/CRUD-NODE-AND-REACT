@@ -40,6 +40,16 @@ export const updateUser = (resquest, response) => {
     db.query(query, [...values, resquest.params.id], (err) => {
         if (err) return response.json(err);
 
-        return respose.status(200).json("Usuário atualizado com sucesso");
-    })
-}
+        return response.status(200).json("Usuário atualizado com sucesso");
+    });
+};
+
+export const deleteUser = (request, response) => {
+    const query = "DELETE FROM usuarios WHERE id = ?";
+
+    db.query(query, [request.params.id], (err) => {
+        if (err) return response.json(err);
+        
+        return response.status(200).json("Usuário deletado com sucesso.");
+    });
+};

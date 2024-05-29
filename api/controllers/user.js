@@ -27,22 +27,23 @@ export const addUser = (request, respose) => {
     });
 };
 
-export const updateUser = (resquest, response) => {
-    const query = "UPDATE usuarios SET ´nome´ = ?, `email` = ?, `fone` = ?, `data_de_nascimento` = ? WHERE `id` = ?";
+export const updateUser = (req, res) => {
+    const query = "UPDATE usuarios SET `nome` = ?, `email` = ?, `fone` = ?, `data_de_nascimento` = ? WHERE id = ?";
 
     const values = [
-        request.body.name,
-        request.body.email,
-        request.body.fone,
-        request.body.data_de_nascimento,
+        req.body.nome,
+        req.body.email,
+        req.body.fone,
+        req.body.data_de_nascimento
     ];
 
-    db.query(query, [...values, resquest.params.id], (err) => {
-        if (err) return response.json(err);
+    db.query(query, [...values, req.params.id], (err) => {
+        if(err) return res.json(err);
 
-        return response.status(200).json("Usuário atualizado com sucesso");
+        return res.status(200).json("Usuário atualizado com sucesso!");
     });
 };
+
 
 export const deleteUser = (request, response) => {
     const query = "DELETE FROM usuarios WHERE id = ?";

@@ -6,6 +6,57 @@ Este projeto consiste em um sistema de CRUD de usuários, onde é possível visu
 todos os usuários cadastrados na base de dados, editar suas informações conforme necessário, 
 excluir usuários existentes e cadastrar novos usuários.
 
+
+## Instruções de Instalação
+
+- Certifique-se de ter o Node.js instalado em sua máquina. Você pode baixá-lo [aqui](https://nodejs.org/).
+- Clone este repositório para o seu ambiente local.
+---
+
+## 🚀 Como Executar o Projeto
+
+### Backend (API)
+
+1. **Acesse a pasta `api`.**
+   
+2. **Instale as dependências:**
+
+    ```bash
+    npm install
+    ```
+
+3. **Configure suas credenciais do MySQL no arquivo `db.json`.**
+
+4. **Inicie o servidor backend:**
+
+    ```bash
+    npm start
+    ```
+
+   A API estará acessível em [http://localhost:8800](http://localhost:8800).
+
+---
+
+### Frontend
+
+1. **Acesse a pasta `frontend`.**
+
+2. **Instale as dependências:**
+
+    ```bash
+    npm install
+    ```
+
+3. **Inicie o servidor frontend:**
+
+    ```bash
+    npm start
+    ```
+
+   O frontend estará acessível em [http://localhost:3000](http://localhost:3000).
+
+---
+
 ## Dependências
 
 ### API (Backend)
@@ -25,16 +76,6 @@ excluir usuários existentes e cadastrar novos usuários.
 - **styled-components**: Biblioteca para estilização de componentes em React.
 - **axios**: Cliente HTTP baseado em Promise para o navegador e Node.js.
 
-## Instruções de Instalação
-
-1. Certifique-se de ter o Node.js instalado em sua máquina. Você pode baixá-lo [aqui](https://nodejs.org/).
-2. Clone este repositório para o seu ambiente local.
-3. Instale as dependências do backend executando `npm install` na pasta `api`.
-4. Instale as dependências do frontend executando `npm install` na pasta `frontend`.
-5. Certifique-se de ter um banco de dados MySQL ou outro banco de dados instalado e configurado corretamente para a API.
-6. Configure as informações de conexão com o banco de dados no arquivo de configuração apropriado da API.
-7. Após configurar o banco de dados, inicie o servidor da API executando `npm start` na pasta `api`.
-8. Inicie o servidor de desenvolvimento do frontend executando `npm start` na pasta `frontend`.
 
 ## Rotas da API
 

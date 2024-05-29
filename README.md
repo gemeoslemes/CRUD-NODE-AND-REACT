@@ -7,9 +7,10 @@ todos os usuários cadastrados na base de dados, editar suas informações confo
 excluir usuários existentes e cadastrar novos usuários.
 
 
-## Instruções de Instalação
+## ℹ️ Observação Instruções de Instalação
 
-- Certifique-se de ter o Node.js instalado em sua máquina. Você pode baixá-lo [aqui](https://nodejs.org/).
+- Certifique-se de ter o Node.js instalado em sua máquina. Você pode baixá-lo [Clique aqui](https://nodejs.org/).
+- Certifique-se de ter o MySQL instaldo em sua máquina. Você pode baixá-lo [Clique aqui](https://www.mysql.com/downloads/)
 - Clone este repositório para o seu ambiente local.
 ---
 
@@ -57,7 +58,8 @@ excluir usuários existentes e cadastrar novos usuários.
 
 ---
 
-## Dependências
+
+## 📚 Dependências e Bibliotecas Utilizadas
 
 ### API (Backend)
 

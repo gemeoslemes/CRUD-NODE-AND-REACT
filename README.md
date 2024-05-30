@@ -26,7 +26,7 @@ excluir usuários existentes e cadastrar novos usuários.
     npm install
     ```
 
-3. **Configure suas credenciais do MySQL no arquivo `db.json`.**
+3. **Configure suas credenciais do MySQL no arquivo `db.js`.**
 
 4. **Inicie o servidor backend:**
 
